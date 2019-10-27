@@ -3,44 +3,42 @@ using Xunit;
 
 namespace LeilaoOnline.Tests
 {
-    public class LeilaoTestes
+    public class LeilaoTerminaPregao
     {
-        [Fact]
-        public void LeilaoComApenasUmLance()
+        [Theory]
+        [InlineData(1000, new double[] { 800, 900, 1000, 990 })]
+        [InlineData(1000, new double[] { 800, 900, 990, 1000 })]
+        [InlineData(800, new double[] { 800 })]
+        public void RetornaMaiorValorDadoLeilaoComPeloMenosUmLance(double valorEsperado, double[] ofertas)
         {
             //Arrange - Cenário
             var leilao = new Leilao("Van Gogh");
             var fulano = new Interessada("Fulano", leilao);
 
-            leilao.RecebeLance(fulano, 800);
+            foreach (var valor in ofertas)
+            {
+                leilao.RecebeLance(fulano, valor);
+            }
 
             //Act - Método sob teste
             leilao.TerminaPregao();
 
             //Assert - Verificação
-            var valorEsperado = 800;
             var valorObtido = leilao.Ganhador.Valor;
-
             Assert.Equal(valorEsperado, valorObtido);
         }
 
         [Fact]
-        public void LeilaoComVariosLances()
+        public void RetornaZeroDadoLeilaoSemLances()
         {
             //Arrange - Cenário
             var leilao = new Leilao("Van Gogh");
-            var fulano = new Interessada("Fulano", leilao);
-            var maria = new Interessada("Maria", leilao);
-
-            leilao.RecebeLance(fulano, 800);
-            leilao.RecebeLance(maria, 900);
-            leilao.RecebeLance(fulano, 1000);
-
+            
             //Act - Método sob teste
             leilao.TerminaPregao();
 
             //Assert - Verificação
-            var valorEsperado = 1000;
+            var valorEsperado = 0;
             var valorObtido = leilao.Ganhador.Valor;
 
             Assert.Equal(valorEsperado, valorObtido);
