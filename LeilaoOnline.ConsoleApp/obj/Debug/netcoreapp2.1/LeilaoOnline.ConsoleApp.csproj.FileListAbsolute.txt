@@ -1,0 +1,14 @@
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.deps.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.runtimeconfig.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.runtimeconfig.dev.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.pdb
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.pdb
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.AssemblyInfo.cs
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.csproj.CopyComplete
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.ConsoleApp\obj\Debug\netcoreapp2.1\LeilaoOnline.ConsoleApp.pdb

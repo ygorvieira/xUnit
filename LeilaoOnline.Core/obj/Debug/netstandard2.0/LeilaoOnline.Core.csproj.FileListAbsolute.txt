@@ -1,0 +1,9 @@
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.csprojAssemblyReference.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.AssemblyInfoInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.AssemblyInfo.cs
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\bin\Debug\netstandard2.0\LeilaoOnline.Core.deps.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\bin\Debug\netstandard2.0\LeilaoOnline.Core.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\bin\Debug\netstandard2.0\LeilaoOnline.Core.pdb
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Core\obj\Debug\netstandard2.0\LeilaoOnline.Core.pdb

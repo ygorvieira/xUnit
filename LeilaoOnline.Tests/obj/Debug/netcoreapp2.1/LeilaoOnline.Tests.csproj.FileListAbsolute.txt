@@ -1,0 +1,17 @@
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Tests.deps.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Tests.runtimeconfig.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Tests.runtimeconfig.dev.json
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Tests.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Tests.pdb
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\bin\Debug\netcoreapp2.1\LeilaoOnline.Core.pdb
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.csprojAssemblyReference.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.AssemblyInfoInputs.cache
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.AssemblyInfo.cs
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.csproj.CopyComplete
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.dll
+C:\Users\Ygor Vieira\Documents\Alura\dotNET\xUnit\Novo\TestesAutomatizados\LeilaoOnline.Tests\obj\Debug\netcoreapp2.1\LeilaoOnline.Tests.pdb
