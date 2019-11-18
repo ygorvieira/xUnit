@@ -5,6 +5,7 @@ namespace LeilaoOnline.Core
 {
     public enum EstadoLeilao
     {
+        LeilaoAntesDoPregao,
         LeilaoEmAndamento,
         LeilaoFinalizado
     }
@@ -12,6 +13,8 @@ namespace LeilaoOnline.Core
     public class Leilao
     {
         private IList<Lance> _lances;
+        private Interessada _ultimoCliente;
+
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
@@ -21,20 +24,27 @@ namespace LeilaoOnline.Core
         {
             Peca = peca;
             _lances = new List<Lance>();
-            Estado = EstadoLeilao.LeilaoEmAndamento;
+            Estado = EstadoLeilao.LeilaoAntesDoPregao;
+        }
+
+        private bool NovoLanceAceito(Interessada cliente, double valor)
+        {
+            return (Estado == EstadoLeilao.LeilaoEmAndamento)
+                && (cliente != _ultimoCliente);
         }
 
         public void RecebeLance(Interessada cliente, double valor)
         {
-            if (Estado == EstadoLeilao.LeilaoEmAndamento)
+            if (NovoLanceAceito(cliente, valor))
             {
                 _lances.Add(new Lance(cliente, valor));
+                _ultimoCliente = cliente;
             }
         }
 
         public void IniciaPregao()
         {
-
+            Estado = EstadoLeilao.LeilaoEmAndamento;
         }
 
         public void TerminaPregao()
