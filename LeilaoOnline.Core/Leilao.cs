@@ -15,17 +15,22 @@ namespace LeilaoOnline.Core
     {
         private IList<Lance> _lances;
         private Interessada _ultimoCliente;
+        private IModalidadeAvaliacao _avaliador;
 
         public IEnumerable<Lance> Lances => _lances;
         public string Peca { get; }
         public Lance Ganhador { get; private set; }
         public EstadoLeilao Estado { get; private set; }
 
-        public Leilao(string peca)
+
+        public double ValorDestino { get; }
+
+        public Leilao(string peca, IModalidadeAvaliacao avaliador)
         {
             Peca = peca;
             _lances = new List<Lance>();
             Estado = EstadoLeilao.LeilaoAntesDoPregao;
+            _avaliador = avaliador;
         }
 
         private bool NovoLanceAceito(Interessada cliente, double valor)
@@ -54,12 +59,7 @@ namespace LeilaoOnline.Core
             {
                 throw new InvalidOperationException("Não é possível terminar o pregão sem que ele tenha começado. Para isso, utilize o método IniciaPregao().");
             }
-
-            Ganhador = Lances
-                .DefaultIfEmpty(new Lance(null, 0))
-                .OrderBy(l => l.Valor)
-                .LastOrDefault();
-
+            Ganhador = _avaliador.Avalia(this);
             Estado = EstadoLeilao.LeilaoFinalizado;
         }
     }

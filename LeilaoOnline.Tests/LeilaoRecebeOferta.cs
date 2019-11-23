@@ -9,7 +9,8 @@ namespace LeilaoOnline.Tests
         [Fact]
         public void NaoAceitaProximoLanceDadoMesmoClienteRealizaouUltimoLance()
         {
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
 
             leilao.IniciaPregao();
@@ -30,7 +31,8 @@ namespace LeilaoOnline.Tests
         public void NaoPermiteNovosLancesDadoLeilaoFinalizado(int quantidadeEsperada, double [] ofertas)
         {
             //Dado leilão finalizado com X lances
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 

@@ -7,13 +7,46 @@ namespace LeilaoOnline.Tests
     public class LeilaoTerminaPregao
     {
         [Theory]
+        [InlineData(1200, 1250, new double[] { 800, 1150, 1400, 1250})]
+        public void RetornaValorSuperiorMaisProximoDadoLeilaoNessaModalidade(double valorDestino, 
+            double valorEsperado, 
+            double[] ofertas)
+        {
+            //Arrange - Cenário
+            IModalidadeAvaliacao modalidade = new OfertaSuperiorMaisProxima(valorDestino);
+            var leilao = new Leilao("Van Gogh", modalidade);
+            var fulano = new Interessada("Fulano", leilao);
+            var maria = new Interessada("Maria", leilao);
+
+            leilao.IniciaPregao();
+            for (int i = 0; i < ofertas.Length; i++)
+            {
+                if ((i % 2 == 0))
+                {
+                    leilao.RecebeLance(fulano, ofertas[i]);
+                }
+                else
+                {
+                    leilao.RecebeLance(maria, ofertas[i]);
+                }
+            }
+
+            //Act
+            leilao.TerminaPregao();
+
+            //Assert
+            Assert.Equal(valorEsperado, leilao.Ganhador.Valor);
+        }
+
+        [Theory]
         [InlineData(1000, new double[] { 800, 900, 1000, 990 })]
         [InlineData(1000, new double[] { 800, 900, 990, 1000 })]
         [InlineData(800, new double[] { 800 })]
         public void RetornaMaiorValorDadoLeilaoComPeloMenosUmLance(double valorEsperado, double[] ofertas)
         {
             //Arrange - Cenário
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             var fulano = new Interessada("Fulano", leilao);
             var maria = new Interessada("Maria", leilao);
 
@@ -43,7 +76,8 @@ namespace LeilaoOnline.Tests
         public void LancaInvalidOperationExceptionDadoQuePregaoNaoFoiIniciado()
         {
             //Arrange - Cenário
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
 
             //Assert - Verificação
             var excecaoObtida = Assert.Throws<InvalidOperationException>(
@@ -59,7 +93,8 @@ namespace LeilaoOnline.Tests
         public void RetornaZeroDadoLeilaoSemLances()
         {
             //Arrange - Cenário
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             leilao.IniciaPregao();
 
             //Act - Método sob teste
