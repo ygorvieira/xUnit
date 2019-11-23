@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LeilaoOnline.Core
@@ -49,6 +50,11 @@ namespace LeilaoOnline.Core
 
         public void TerminaPregao()
         {
+            if (Estado != EstadoLeilao.LeilaoEmAndamento)
+            {
+                throw new InvalidOperationException("Não é possível terminar o pregão sem que ele tenha começado. Para isso, utilize o método IniciaPregao().");
+            }
+
             Ganhador = Lances
                 .DefaultIfEmpty(new Lance(null, 0))
                 .OrderBy(l => l.Valor)
